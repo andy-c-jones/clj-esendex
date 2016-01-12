@@ -1,8 +1,8 @@
 (ns clj-esendex.core (:require [clojure.data.xml :as xml]
                                [clj-http.lite.client :as client]))
 
-(defn sms-xml [to body]
-  (-> (xml/element :message {} (xml/element :to {} to) (xml/element :body {} body))
+(defn sms-xml [account-ref to body]
+  (-> (xml/element :messages {} [(xml/element :accountreference {} account-ref) (xml/element :message {} (xml/element :to {} to) (xml/element :body {} body))])
       (xml/emit-str)))
 
 (defn post-reponse [url user pass body]
