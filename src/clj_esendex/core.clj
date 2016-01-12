@@ -1,6 +1,5 @@
-(ns clj-esendex.core)
+(ns clj-esendex.core (:require [clojure.data.xml :as xml]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn create-sms-xml [to body]
+  (-> (xml/element :message)
+      (xml/emit-str)))
