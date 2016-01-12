@@ -6,6 +6,6 @@
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/data.codec "0.1.0"]
                  [org.clojure/data.xml "0.0.8"]
-                 [clj-http "2.0.0"]]
+                 [clj-http-lite "0.3.0"]]
   :profiles {:dev {:dependencies [[midje "1.8.3"]]
                    :plugins [[lein-midje "3.1.4-SNAPSHOT"]]}})
