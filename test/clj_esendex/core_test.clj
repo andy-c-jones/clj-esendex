@@ -9,10 +9,11 @@
 
 (defn app-handler [request]
   {:status 200
-   :headers {"Content-Type" "text/html"}
-   :body "Hello World"})
+   :headers {"Content-Type" "application/xml"}
+   :body ""})
 
 (fact "you can send an sms"
   (let [fake (run-jetty-async app-handler {:join? false :port 3210})]
-  (Thread/sleep 2000)
+  (Thread/sleep 1000)
+  (post-reponse "http://localhost:3210" "user" "pass" "body") => (contains {:status 200})
   (.stop fake)))
