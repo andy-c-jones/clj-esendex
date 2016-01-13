@@ -1,5 +1,5 @@
 # clj-esendex
-[![Clojars Project](https://img.shields.io/clojars/v/clj-esendex.svg)](https://clojars.org/clj-esendex)
+[![Build Status](https://snap-ci.com/andy-c-jones/clj-esendex/branch/master/build_image)](https://snap-ci.com/andy-c-jones/clj-esendex/branch/master)[![Clojars Project](https://img.shields.io/clojars/v/clj-esendex.svg)](https://clojars.org/clj-esendex)
 
 Esendex Clojure SDK (Work In Progess)
 
