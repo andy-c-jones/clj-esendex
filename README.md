@@ -1,6 +1,6 @@
 # clj-esendex
+[![Clojars Project](https://img.shields.io/clojars/v/clj-esendex.svg)](https://clojars.org/clj-esendex)
 Esendex Clojure SDK (Work In Progess)
-
 
 run "lein midje" to run all tests
 
