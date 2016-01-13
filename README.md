@@ -4,8 +4,23 @@ Esendex Clojure SDK (Work In Progess)
 
 run "lein midje" to run all tests
 
-#Currently Working On
-* Sending a single message
+#Example Usage
+Add dependency to lein project file
+```
+[clj-esendex "x.x.x"]
+```
+
+run lein repl
+```
+(require '[clj-esendex.core :as client])
+
+(let [dispatch (client/sms-dispatcher "USERNAME" "PASSWORD")]
+  (-> (client/sms-xml "EX0000000" 447987654321 "Every message matters!")
+       dispatch))
+```
+
+#Working
+* Sending a single message (fire and forget)
 
 #Next Steps
-* Checking the status of the message you have sent
+* Read the response of a sent message
