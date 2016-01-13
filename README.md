@@ -7,7 +7,7 @@ run "lein midje" to run all tests
 #Example Usage
 Add dependency to lein project file
 ```
-[clj-esendex "x.x.x"]
+[clj-esendex "0.1.0-SNAPSHOT"]
 ```
 
 run lein repl
