@@ -11,7 +11,7 @@
      :body body}))
 
 (defn dispatched-sms [user pass body]
-  (partial post-reponse "https://api.esendex.com/v1.0/messagedispatcher" user pass body))
+  (post-reponse "https://api.esendex.com/v1.0/messagedispatcher" user pass body))
 
 (defn sms-dispatcher [user pass]
   (partial dispatched-sms user pass))
